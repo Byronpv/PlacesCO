@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">PlacesCO</string>
-    <string name="descripcion">Temperatura: </string>
-    <string name="grados_centigrados">30°</string>
-    <string name="ubicacion">Ubicación:</string>
-    <string name="bolivar">Bolivar, Colombia</string>
-    <string name="cartagena_de_indias">Cartagena de Indias</string>
+    <string name="name">Nombre</string>
+    <string name="location">Magdalena, Colombia</string>
+    <string name="temperature">30°C</string>
+    <string name="description">Santa Marta, oficialmente el Distrito Turístico, Cultural e Histórico de Santa Marta, es una ciudad colombiana, capital del departamento de Magdalena y, tercer centro urbano de importancia de la Región Caribe. Fundada el 29 de julio de 1525 por el conquistador español Rodrigo de Bastidas, es la ciudad más antigua existente de Colombia y la segunda más antigua de Sudamérica.</string>
+    <string name="text">Santa Marta</string>
+    <string name="reccomended">Sitios recomendados</string>
+    <string name="site1">• Bahía de Santa Marta</string>
+    <string name="site2">• El rodadero</string>
+    <string name="site3">• Taganga</string>
+    <string name="site4">• Parque Tayrona</string>
 
 </resources>

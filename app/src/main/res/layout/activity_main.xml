@@ -1,86 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="12dp"
+    >
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/text"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape_bordes"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cartagena" />
+    <ImageView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_below="@id/text"
+        android:paddingBottom="0dp"
+        android:src="@drawable/city"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/cartagena_de_indias"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/locate"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_locate"
+        android:layout_below="@id/city"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:layout_toRightOf="@id/locate"
+        android:text="@string/location" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:text="@string/descripcion"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/temperature"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:paddingStart="5dp"
+        android:src="@drawable/temp"
+        android:layout_toRightOf="@id/location"
+        android:layout_below="@id/city"
+        />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="@string/grados_centigrados"
-                android:textSize="18sp" />
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingStart="9dp"
+        android:layout_below="@id/city"
+        android:layout_toRightOf="@id/temperature"
+        android:text="@string/temperature"
+        />
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:paddingTop="26dp"
+        android:layout_below="@id/location"
+        />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/reccomended"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reccomended"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_below="@id/description"
+        />
+    <TextView
+        android:id="@+id/site1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/site1"
+        android:paddingEnd="40dp"
+        android:paddingStart="8dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/reccomended"
+        />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:text="@string/ubicacion"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/site2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/site2"
+        android:paddingBottom="10dp"
+        android:paddingStart="8dp"
+        android:layout_below="@id/reccomended"
+        android:layout_toRightOf="@id/site1"
+        />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="@string/bolivar"
-                android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/site3"
+        android:paddingStart="8dp"
+        android:layout_below="@id/site1"
+        />
 
-        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/site4"
+        android:layout_below="@id/site2"
+        android:layout_toRightOf="@id/site1"
+        android:paddingStart="8dp"
+        />
 
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
