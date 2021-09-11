@@ -4,31 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/MarginGen"
+    android:background="@color/greenl"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textpoi1"
-        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        style="@style/TextAppearance.Compat.Notification.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/yellow"
-        android:text="@string/POI1"
+        android:layout_margin="@dimen/margingen"
+        android:background="@color/green"
+        android:text="@string/poi1"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/margintext"
+        android:src="@drawable/poi1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textpoi1"
-        android:src="@drawable/poi1" />
+        app:layout_constraintTop_toBottomOf="@id/textpoi1" />
 
+    <TextView
+        android:id="@+id/textinfo"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margintext"
+        android:text="@string/infopoi1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/textlocate"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margintext"
+        android:text="@string/locatepoi1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textinfo" />
+
+    <TextView
+        android:id="@+id/textweather"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margintext"
+        android:text="@string/weatherpoi1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textlocate" />
+
+    <TextView
+        android:id="@+id/textinte"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margintext"
+        android:text="@string/interestpoi1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textweather" />
+
+    <TextView
+        android:id="@+id/textother"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margintext"
+        android:text="@string/otherpoi1"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textinte" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
