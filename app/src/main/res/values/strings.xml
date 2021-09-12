@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">PlacesCO</string>
+    <string name="descripcion">Temperatura: </string>
+    <string name="grados_centigrados">30°</string>
+    <string name="ubicacion">Ubicación:</string>
+    <string name="bolivar">Bolivar, Colombia</string>
+    <string name="cartagena_de_indias">Cartagena de Indias</string>
+
     <string name="name">Nombre</string>
     <string name="location">Magdalena, Colombia</string>
     <string name="temperature">30°C</string>
