@@ -19,4 +19,20 @@
     <string name="site3">• Taganga</string>
     <string name="site4">• Parque Tayrona</string>
 
+    <string name="app_name">PlacesCO</string>
+    <string name="poi1">DESIERTO DE LA TATACOA</string>
+    <string name="infopoi1">El Desierto de la Tatacoa es la segunda zona árida más extensa
+        de Colombia y es uno de los escenarios naturales más atractivos de Colombia, de
+        tierra de color ocre y gris con pincelazos del verde de los cactus. Es bosque seco
+        tropical que se encuentra en una zona muy erosionada cruzada por cañones secos</string>
+    <string name="locatepoi1">Ubicación: A 38 kilómetros de la ciudad de Neiva y a 10 kilómetros
+        de Natagaima en el Tolima.</string>
+    <string name="weatherpoi1">Clima: Semiárido cálido - En el día puede llegar a los 40°C y en la
+        noche puede bajar hasta los 24°C</string>
+    <string name="interestpoi1">Sitios recomendados: El observatorio astronómico, Las Lajas, El Cuzco,
+        El Cardón, El Doche, San Nicolás y Los Hoyos</string>
+    <string name="otherpoi1">Los planes turísticos a este maravilloso lugar tienen un valor que oscila
+        entre $ 300.000 y $800.000 pesos colombianos, dependiendo el tipo de acomodación deseada para
+        tres días y dos noches. Estos valores son con punto de partida en las ciudades de Bogotá,
+        Medellín, Ibagué o Neiva. </string>
 </resources>
