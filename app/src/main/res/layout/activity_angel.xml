@@ -43,24 +43,49 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
+    <ImageView
+        android:id="@+id/imglocate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margintext"
+        android:src="@drawable/locate"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textlocate"
+        app:layout_constraintTop_toBottomOf="@id/textinfo"
+        app:layout_constraintBottom_toTopOf="@id/textweather"/>
+
     <TextView
         android:id="@+id/textlocate"
         style="@style/TextAppearance.MaterialComponents.Body2"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margintext"
         android:text="@string/locatepoi1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textinfo" />
 
+    <ImageView
+        android:id="@+id/imgweather"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margintext"
+        android:src="@drawable/temp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textweather"
+        app:layout_constraintTop_toBottomOf="@id/textlocate"
+        app:layout_constraintBottom_toTopOf="@id/textinte"/>
+
     <TextView
         android:id="@+id/textweather"
         style="@style/TextAppearance.MaterialComponents.Body2"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margintext"
         android:text="@string/weatherpoi1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textlocate" />
