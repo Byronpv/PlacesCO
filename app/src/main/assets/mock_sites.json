@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Bahía de Santa Marta",
+    "description": "Conocida como la Bahía más hermosa de América; ésta es una de las playas emblemáticas de la ciudad, ubicada en el sector más importante",
+    "rating": 4.5,
+    "urlPhoto": "bahia_de_santa_marta.jpg"
+  },
+  {
+    "name": "El rodadero",
+    "description": "Este emplazamiento geográfico tiene todas las ventajas de la naturaleza, especialmente el tranquilo y limpio mar que no ofrece peligro alguno para los bañistas y que se presta para el ejercicio de casi todos los deportes acuáticos.",
+    "rating": 4.5,
+    "urlPhoto": "rodadero.jpg"
+  },
+  {
+    "name": "Taganga",
+    "description": "Taganga es un característico y típico pueblo de pescadores, es muy popular por sus hermosos paisajes y miradores. También es frecuentada por sus varias escuelas de buceo. Taganga concentra la mayoría de empresas que prestan servicios de buceo o snorkeling de la región.",
+    "rating": 4.2,
+    "urlPhoto": "taganga.jpg"
+  },
+  {
+    "name": "Parque Tayrona",
+    "description": "El Parque Tayrona es uno de los Parques Naturales mas importantes de Colombia y es sin lugar a dudas un lugar para la Contemplación y Descanso. Este espectacular Nirvana Natural tiene unas magníficas playas de aguas cristalinas: Cinto, Concha, Playa Cristal, Chengue, Neguanje, Gayraca, Guachaquita, entre otras.",
+    "rating": 4.7,
+    "urlPhoto": "tayrona.jpg"
+  }
+]
