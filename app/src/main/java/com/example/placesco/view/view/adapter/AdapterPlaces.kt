@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.placesco.R
 import com.example.placesco.model.Sites
+import com.squareup.picasso.Picasso
+import com.squareup.picasso.RequestCreator
 import java.security.AccessController.getContext
 
 class AdapterPlaces(private val mSites: ArrayList<Sites>) : RecyclerView.Adapter<AdapterPlaces.ViewHolder>() {
@@ -31,8 +33,11 @@ class AdapterPlaces(private val mSites: ArrayList<Sites>) : RecyclerView.Adapter
         //val data = dataPlaces[position]
         val (urlPhoto, name, description, rating) = mSites[position]
 
-        val imgUri: Uri = Uri.parse(urlPhoto)
-        holder.imageLabel.setImageURI(imgUri)
+        Picasso.get()
+            .load(urlPhoto)
+            .into(holder.imageLabel)
+
+        //holder.imageLabel.setImageURI()
         holder.nameLabel.text = name
         holder.descriptionLabel.text = description
         holder.ratingLabel.text = rating
