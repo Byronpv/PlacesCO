@@ -1,24 +1,5 @@
 <resources>
     <string name="app_name">PlacesCO</string>
-    <string name="temperatura">Temperatura: </string>
-    <string name="grados_centigrados">30°</string>
-    <string name="ubicacion">Ubicación: </string>
-    <string name="bolivar">Bolivar, Colombia</string>
-    <string name="cartagena_de_indias">CARTAGENA DE ÍNDIAS</string>
-    <string name="descripci_n">Descripción: </string>
-    <string name="descripcion_cartagena">Cartagena de Indias, oficialmente Distrito Turístico y Cultural de Cartagena de Indias abreviado Cartagena de Indias, D. T. y C., es la capital del departamento de Bolívar, al norte de Colombia.6​ Fue fundada el 1 de junio de 1533 por Pedro de Heredia.7​ Desde 1991 Cartagena es un Distrito Turístico y Cultural.8​ La ciudad está ubicada a orillas del mar Caribe.</string>
-
-    <string name="name">Nombre</string>
-    <string name="location">Magdalena, Colombia</string>
-    <string name="temperature">30°C</string>
-    <string name="description">Santa Marta, oficialmente el Distrito Turístico, Cultural e Histórico de Santa Marta, es una ciudad colombiana, capital del departamento de Magdalena y, tercer centro urbano de importancia de la Región Caribe. Fundada el 29 de julio de 1525 por el conquistador español Rodrigo de Bastidas, es la ciudad más antigua existente de Colombia y la segunda más antigua de Sudamérica.</string>
-    <string name="text">Santa Marta</string>
-    <string name="reccomended">Sitios recomendados</string>
-    <string name="site1">• Bahía de Santa Marta</string>
-    <string name="site2">• El rodadero</string>
-    <string name="site3">• Taganga</string>
-    <string name="site4">• Parque Tayrona</string>
-
     <string name="poi1">DESIERTO DE LA TATACOA</string>
     <string name="infopoi1">El Desierto de la Tatacoa es la segunda zona árida más extensa
         de Colombia y es uno de los escenarios naturales más atractivos de Colombia, de
