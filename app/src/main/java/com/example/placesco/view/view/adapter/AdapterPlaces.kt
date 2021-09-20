@@ -20,7 +20,7 @@ class AdapterPlaces(private val mSites: ArrayList<Sites>) : RecyclerView.Adapter
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val (urlPhoto, name, description, rating) = mSites[position]
-        Picasso.get().load(urlPhoto).resize(100, 57).into(holder.imageLabel)
+        /*Picasso.get().load(urlPhoto).into(holder.imageLabel)*/
         holder.nameLabel.text = name
         holder.descriptionLabel.text = description
         holder.ratingLabel.text = rating

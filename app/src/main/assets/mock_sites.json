@@ -6,6 +6,12 @@
     "urlPhoto": "poi1"
   },
   {
+    "name": "El Valle De Los Deseos",
+    "description": "Un lugar que guarda los anhelos de muchos visitantes representados en pilas de rocas, que cuando el viento las derrumba significa que un deseo se ha cumplido.",
+    "rating": 4.5,
+    "urlPhoto": "poi6"
+  },
+  {
     "name": "Laberintos De Cuzco Y Los Hoyos",
     "description": "El Laberinto de Cuzco es bastante atractivo por su intenso color rojo, este es una serie de montículos de arena con tonalidades de color naranja y rojas",
     "rating": 4.2,
@@ -28,11 +34,5 @@
     "description": "En este Lugar se exhiben un centenar de objetos elaborados en totumo, un árbol de más de 4 metros de altura que se utiliza para elaborar instrumentos caseros, artesanías y mobiliario del hogar.",
     "rating": 4.1,
     "urlPhoto": "poi5"
-  },
-  {
-    "name": "El Valle De Los Deseos",
-    "description": "Un lugar que guarda los anhelos de muchos visitantes representados en pilas de rocas, que cuando el viento las derrumba significa que un deseo se ha cumplido.",
-    "rating": 4.5,
-    "urlPhoto": "poi6"
   }
 ]
