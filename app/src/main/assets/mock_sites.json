@@ -3,7 +3,7 @@
     "name": "Observatorio Astronómico",
     "description": "Dos observatorios que se especializan en brindar charlas sobre astronomía, su actividad y componentes; generado la oportunidad de observar el cielo con equipos profesionales, una gran experiencia",
     "rating": 5,
-    "urlPhoto": "poi1"
+    "urlPhoto": "https://i.pinimg.com/originals/67/5c/23/675c23c058bfaa4b7dc8d8240c2405d3.jpg"
   },
   {
     "name": "El Valle De Los Deseos",
@@ -15,24 +15,24 @@
     "name": "Laberintos De Cuzco Y Los Hoyos",
     "description": "El Laberinto de Cuzco es bastante atractivo por su intenso color rojo, este es una serie de montículos de arena con tonalidades de color naranja y rojas",
     "rating": 4.2,
-    "urlPhoto": "poi2"
+    "urlPhoto": "https://travelgrafia.co/wp-content/uploads/2019/03/valle-de-los-deseos-tatacoa.jpg"
   },
   {
     "name": "El Valle Xilópalos",
     "description": "Un lugar menos explorado por turistas, donde sus grandes cañones, gigantes cactus y su paisaje hacen de éste un paisaje único.",
     "rating": 4.1,
-    "urlPhoto": "poi3"
+    "urlPhoto": "https://cdn.baquianos.com/img/tours/valle-de-los-xilopalos-sli81.jpg"
   },
   {
     "name": "Museo Paleontológico De Villavieja",
     "description": "Allí se alberga más de 600 piezas de fósiles encontradas en el desierto de la Tatacoa, que datan de al menos 5 millones de años.",
     "rating": 4.1,
-    "urlPhoto": "poi4"
+    "urlPhoto": "https://www.eldesiertodelatatacoa.com/assets/eldesiertodelatatacoa.com/uploads/items/2/1518543388.jpg"
   },
   {
     "name": "Museo Artesanal Casa Del Totumo",
     "description": "En este Lugar se exhiben un centenar de objetos elaborados en totumo, un árbol de más de 4 metros de altura que se utiliza para elaborar instrumentos caseros, artesanías y mobiliario del hogar.",
     "rating": 4.1,
-    "urlPhoto": "poi5"
+    "urlPhoto": "https://media-cdn.tripadvisor.com/media/photo-s/08/42/83/15/casa-del-totumo.jpg"
   }
 ]
