@@ -1,26 +1,38 @@
 [
   {
-    "name": "Bahía de Santa Marta",
-    "description": "Conocida como la Bahía más hermosa de América; ésta es una de las playas emblemáticas de la ciudad, ubicada en el sector más importante",
-    "rating": 4.5,
-    "urlPhoto": "https://www.santamartacolombia.com.co/images/sitios_turisticos/bahia_de_santa_marta/bahia_de_santa_marta2.jpg"
+    "name": "Observatorio Astronómico",
+    "description": "Dos observatorios que se especializan en brindar charlas sobre astronomía, su actividad y componentes; generado la oportunidad de observar el cielo con equipos profesionales, una gran experiencia",
+    "rating": 5,
+    "urlPhoto": "poi1"
   },
   {
-    "name": "El rodadero",
-    "description": "Este emplazamiento geográfico tiene todas las ventajas de la naturaleza, especialmente el tranquilo y limpio mar que no ofrece peligro alguno para los bañistas y que se presta para el ejercicio de casi todos los deportes acuáticos.",
-    "rating": 4.5,
-    "urlPhoto": "https://www.hoydiariodelmagdalena.com.co/wp-content/uploads/2020/06/Bah%C3%ADa-de-El-Rodadero.jpg"
-  },
-  {
-    "name": "Taganga",
-    "description": "Taganga es un característico y típico pueblo de pescadores, es muy popular por sus hermosos paisajes y miradores. También es frecuentada por sus varias escuelas de buceo. Taganga concentra la mayoría de empresas que prestan servicios de buceo o snorkeling de la región.",
+    "name": "Laberintos De Cuzco Y Los Hoyos",
+    "description": "El Laberinto de Cuzco es bastante atractivo por su intenso color rojo, este es una serie de montículos de arena con tonalidades de color naranja y rojas",
     "rating": 4.2,
-    "urlPhoto": "https://dynamic-media-cdn.tripadvisor.com/media/urlPhoto-o/05/e8/19/91/taganga-and-playa-grande.jpg?w=500&h=300&s=1"
+    "urlPhoto": "poi2"
   },
   {
-    "name": "Parque Tayrona",
-    "description": "El Parque Tayrona es uno de los Parques Naturales mas importantes de Colombia y es sin lugar a dudas un lugar para la Contemplación y Descanso. Este espectacular Nirvana Natural tiene unas magníficas playas de aguas cristalinas: Cinto, Concha, Playa Cristal, Chengue, Neguanje, Gayraca, Guachaquita, entre otras.",
-    "rating": 4.7,
-    "urlPhoto": "https://tierracolombiana.org/wp-content/uploads/2019/05/2-2.jpg"
+    "name": "El Valle Xilópalos",
+    "description": "Un lugar menos explorado por turistas, donde sus grandes cañones, gigantes cactus y su paisaje hacen de éste un paisaje único.",
+    "rating": 4.1,
+    "urlPhoto": "poi3"
+  },
+  {
+    "name": "Museo Paleontológico De Villavieja",
+    "description": "Allí se alberga más de 600 piezas de fósiles encontradas en el desierto de la Tatacoa, que datan de al menos 5 millones de años.",
+    "rating": 4.1,
+    "urlPhoto": "poi4"
+  },
+  {
+    "name": "Museo Artesanal Casa Del Totumo",
+    "description": "En este Lugar se exhiben un centenar de objetos elaborados en totumo, un árbol de más de 4 metros de altura que se utiliza para elaborar instrumentos caseros, artesanías y mobiliario del hogar.",
+    "rating": 4.1,
+    "urlPhoto": "poi5"
+  },
+  {
+    "name": "El Valle De Los Deseos",
+    "description": "Un lugar que guarda los anhelos de muchos visitantes representados en pilas de rocas, que cuando el viento las derrumba significa que un deseo se ha cumplido.",
+    "rating": 4.5,
+    "urlPhoto": "poi6"
   }
 ]

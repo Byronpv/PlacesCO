@@ -14,7 +14,6 @@ import java.util.ArrayList
 import org.json.JSONException
 
 class MainActivity : AppCompatActivity() {
-    private val siteList: ArrayList<Sites> = ArrayList()
     private lateinit var recycler: RecyclerView
     private lateinit var adapterPlaces: AdapterPlaces
     private lateinit var mSites: ArrayList<Sites>
@@ -23,16 +22,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //adapterPlaces = AdapterPlaces(mSites)
         recycler = findViewById(R.id.recyclerview_places)
         recycler.layoutManager = LinearLayoutManager(this)
-        //adapterPlaces.setListData(createPlaces())
         setupRecyclerView()
         generateSites()
-        //recycler.adapter = adapterPlaces
     }
 
-    /*Se configura el recyclerview*/
     private fun setupRecyclerView() {
         mSites = arrayListOf()
         recycler.addItemDecoration(
@@ -45,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         recycler.adapter = adapterPlaces
     }
 
-    /*funcion que permite leer el archivo json con los sitios de interés*/
     private fun readJsonFile(): String? {
         var sitesString: String? = null
         try {
@@ -54,16 +48,13 @@ class MainActivity : AppCompatActivity() {
             val buffer = ByteArray(size)
             inputStream.read(buffer)
             inputStream.close()
-
             sitesString = String(buffer)
         } catch (e: IOException) {
             e.printStackTrace()
         }
-
         return sitesString
     }
 
-    /*funcion que almacena los datos del json para reflejarlos en el layout*/
     private fun generateSites() {
         val sitesString = readJsonFile()
         try {
@@ -76,20 +67,11 @@ class MainActivity : AppCompatActivity() {
                     sitesJson.getString("description"),
                     sitesJson.getString("rating")
                 )
-                //Log.d(TAG, "generateSites: $sites")
                 mSites.add(sites)
             }
-
             adapterPlaces.notifyDataSetChanged()
         } catch (e: JSONException) {
             e.printStackTrace()
         }
-    }
-
-
-    private fun createPlaces(): ArrayList<Sites> {
-        return arrayListOf(Sites("", "Cartagena", "Ciudad amurallada", "4.8"),
-            Sites("", "Cartagena", "Ciudad amurallada", "4.8"),
-            Sites("", "Cartagena", "Ciudad amurallada", "4.8"))
     }
 }

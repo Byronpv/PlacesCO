@@ -1,9 +1,9 @@
 package com.example.placesco.model
 
 data class Sites(
-    var urlPhoto: String,
-    var name: String,
-    var description: String,
-    var rating: String
+    val urlPhoto: String,
+    val name: String,
+    val description: String,
+    val rating: String
 ) {
 }
