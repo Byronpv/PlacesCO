@@ -23,6 +23,9 @@ class AdapterPlaces(private val mSites: ArrayList<Sites>) : RecyclerView.Adapter
         holder.nameLabel.text = name
         holder.descriptionLabel.text = description
         holder.ratingLabel.text = rating
+        Picasso.get().load(urlPhoto).into(holder.imageLabel)
+
+
     }
 
     override fun getItemCount(): Int {
@@ -30,9 +33,11 @@ class AdapterPlaces(private val mSites: ArrayList<Sites>) : RecyclerView.Adapter
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var imageLabel: ImageView = itemView.findViewById(R.id.image_poi)
+        var imageLabel: ImageView = itemView.findViewById(R.id.image_profile)
         var nameLabel: TextView = itemView.findViewById(R.id.place_name)
         var descriptionLabel: TextView = itemView.findViewById(R.id.place_description)
         var ratingLabel: TextView = itemView.findViewById(R.id.rating)
+
+
     }
 }

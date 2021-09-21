@@ -2,14 +2,14 @@
   {
     "name": "Observatorio Astronómico",
     "description": "Dos observatorios que se especializan en brindar charlas sobre astronomía, su actividad y componentes; generado la oportunidad de observar el cielo con equipos profesionales, una gran experiencia",
-    "rating": 5,
+    "rating": 5.0,
     "urlPhoto": "https://i.pinimg.com/originals/67/5c/23/675c23c058bfaa4b7dc8d8240c2405d3.jpg"
   },
   {
     "name": "El Valle De Los Deseos",
     "description": "Un lugar que guarda los anhelos de muchos visitantes representados en pilas de rocas, que cuando el viento las derrumba significa que un deseo se ha cumplido.",
     "rating": 4.5,
-    "urlPhoto": "poi6"
+    "urlPhoto": "https://travelgrafia.co/wp-content/uploads/2019/03/valle-de-los-deseos-tatacoa.jpg"
   },
   {
     "name": "Laberintos De Cuzco Y Los Hoyos",
