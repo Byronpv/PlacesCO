@@ -3,6 +3,7 @@ package com.example.placesco.view.view.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -79,6 +80,8 @@ class MainActivity : AppCompatActivity(),ClickListener {
 
     override fun onItemClicked(position: Int) {
         Toast.makeText(this, "POI " + (position + 1) + " clickeado", Toast.LENGTH_SHORT).show()
-
+        val transaction : FragmentTransaction = supportFragmentManager.beginTransaction()
+        val newFragment = DetailsFragment()
+        transaction.replace(R.id.lhome, newFragment).addToBackStack(null).commit()
     }
 }

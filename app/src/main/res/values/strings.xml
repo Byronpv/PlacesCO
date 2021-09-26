@@ -1,13 +1,9 @@
 <resources>
     <string name="app_name">PlacesCO</string>
 
-    <string name="poi1">DESIERTO DE LA TATACOA</string>
-    <string name="infopoi1">El Desierto de la Tatacoa es la segunda zona árida más extensa
-        de Colombia y es uno de los escenarios naturales más atractivos de Colombia, de
-        tierra de color ocre y gris con pincelazos del verde de los cactus. Es bosque seco
-        tropical que se encuentra en una zona muy erosionada cruzada por cañones secos</string>
-    <string name="locatepoi1">Ubicación: A 38 kilómetros de la ciudad de Neiva y a 10 kilómetros
-        de Natagaima en el Tolima.</string>
+    <string name="poi1">Observatorio Astronómico</string>
+    <string name="infopoi1">Dos observatorios que se especializan en brindar charlas sobre astronomía, su actividad y componentes; generado la oportunidad de observar el cielo con equipos profesionales, una gran experiencia</string>
+    <string name="locatepoi1">Ubicación: Ubicado cerca del mirador el Cusco, del Desierto Rojo, por la vía principal </string>
     <string name="weatherpoi1">Clima: Semiárido cálido - En el día puede llegar a los 40°C y en la
         noche puede bajar hasta los 24°C</string>
     <string name="interestpoi1">Sitios recomendados: El observatorio astronómico, Las Lajas, El Cuzco,
