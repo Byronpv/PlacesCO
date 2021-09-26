@@ -2,18 +2,20 @@ package com.example.placesco.view.view.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.placesco.R
 import com.example.placesco.view.view.adapter.AdapterPlaces
 import com.example.placesco.model.Sites
+import com.example.poi.ClickListener
 import org.json.JSONArray
 import java.io.IOException
 import java.util.ArrayList
 import org.json.JSONException
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),ClickListener {
     private lateinit var recycler: RecyclerView
     private lateinit var adapterPlaces: AdapterPlaces
     private lateinit var mSites: ArrayList<Sites>
@@ -36,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 DividerItemDecoration.VERTICAL
             )
         )
-        adapterPlaces = AdapterPlaces(mSites)
+        adapterPlaces = AdapterPlaces(mSites,this)
         recycler.adapter = adapterPlaces
     }
 
@@ -73,5 +75,10 @@ class MainActivity : AppCompatActivity() {
         } catch (e: JSONException) {
             e.printStackTrace()
         }
+    }
+
+    override fun onItemClicked(position: Int) {
+        Toast.makeText(this, "POI " + (position + 1) + " clickeado", Toast.LENGTH_SHORT).show()
+
     }
 }
