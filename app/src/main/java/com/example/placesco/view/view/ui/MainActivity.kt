@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var adapterPlaces: AdapterPlaces
     private lateinit var mSites: ArrayList<Sites>
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
