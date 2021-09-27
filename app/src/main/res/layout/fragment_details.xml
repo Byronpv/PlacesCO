@@ -26,8 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margintext"
+        android:layout_marginTop="12dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/poi1"
+        android:src="@drawable/observatorio"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textpoi1" />
@@ -70,28 +72,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textlocate" />
-
-    <TextView
-        android:id="@+id/textinte"
-        style="@style/TextAppearance.MaterialComponents.Body2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margintext"
-        android:text="@string/interestpoi1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textweather" />
-
-    <TextView
-        android:id="@+id/textother"
-        style="@style/TextAppearance.AppCompat.Body2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margintext"
-        android:text="@string/otherpoi1"
-        android:textAlignment="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textinte" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
