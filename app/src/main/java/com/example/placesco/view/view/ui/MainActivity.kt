@@ -16,7 +16,7 @@ import java.io.IOException
 import java.util.ArrayList
 import org.json.JSONException
 
-class MainActivity : AppCompatActivity(),ClickListener {
+class MainActivity : AppCompatActivity(), ClickListener {
     private lateinit var recycler: RecyclerView
     private lateinit var adapterPlaces: AdapterPlaces
     private lateinit var mSites: ArrayList<Sites>
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(),ClickListener {
                 DividerItemDecoration.VERTICAL
             )
         )
-        adapterPlaces = AdapterPlaces(mSites,this)
+        adapterPlaces = AdapterPlaces(mSites, this)
         recycler.adapter = adapterPlaces
     }
 
@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity(),ClickListener {
 
     override fun onItemClicked(position: Int) {
         Toast.makeText(this, "POI " + (position + 1) + " clickeado", Toast.LENGTH_SHORT).show()
-        val transaction : FragmentTransaction = supportFragmentManager.beginTransaction()
+        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         val newFragment = DetailsFragment()
         transaction.replace(R.id.lhome, newFragment).addToBackStack(null).commit()
     }

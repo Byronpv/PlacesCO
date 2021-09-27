@@ -11,9 +11,12 @@ import com.example.placesco.model.Sites
 import com.example.poi.ClickListener
 import com.squareup.picasso.Picasso
 
-class AdapterPlaces(private val mSites: ArrayList<Sites>, private val clickListener: ClickListener) : RecyclerView.Adapter<AdapterPlaces.ViewHolder>() {
+class AdapterPlaces(
+    private val mSites: ArrayList<Sites>,
+    private val clickListener: ClickListener
+) : RecyclerView.Adapter<AdapterPlaces.ViewHolder>() {
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_sites_description, parent, false)
         return ViewHolder(view);

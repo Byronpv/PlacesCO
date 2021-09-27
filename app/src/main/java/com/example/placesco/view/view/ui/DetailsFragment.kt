@@ -10,7 +10,6 @@ import android.widget.RelativeLayout
 import androidx.fragment.app.FragmentTransaction
 import com.example.placesco.R
 
-
 class DetailsFragment : Fragment() {
 
     override fun onCreateView(

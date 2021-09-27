@@ -7,7 +7,6 @@
     android:background="@color/greenl"
     tools:context=".view.view.ui.MainActivity">
 
-
     <TextView
         android:id="@+id/textpoi1"
         android:layout_width="match_parent"
@@ -21,7 +20,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView"
@@ -74,4 +72,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textlocate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
