@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), ClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_home
+        setContentView(R.layout.activity_main)
         recycler = findViewById(R.id.recyclerview_places)
         recycler.layoutManager = LinearLayoutManager(this)
         setupRecyclerView()
