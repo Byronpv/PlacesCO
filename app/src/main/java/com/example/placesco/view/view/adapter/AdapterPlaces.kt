@@ -27,7 +27,8 @@ class AdapterPlaces(
         holder.nameLabel.text = name
         holder.descriptionLabel.text = description
         holder.ratingLabel.text = rating
-        Picasso.get().load(urlPhoto).into(holder.imageLabel)
+        //Picasso.get().load(urlPhoto).into(holder.imageLabel)
+        holder.imageLabel.setImageResource(R.drawable.poi1)
         val listener = holder.descriptionLabel
         val listener2 = holder.imageLabel
         val listener3 = holder.nameLabel
