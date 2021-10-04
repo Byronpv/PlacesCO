@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), ClickListener {
         generateSites()
     }
 
-    private fun setupRecyclerView() {
+   private fun setupRecyclerView() {
         mSites = arrayListOf()
         recycler.addItemDecoration(
             DividerItemDecoration(

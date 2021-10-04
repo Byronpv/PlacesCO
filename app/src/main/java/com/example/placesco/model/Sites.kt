@@ -5,5 +5,4 @@ data class Sites(
     val name: String,
     val description: String,
     val rating: String
-) {
-}
+)
