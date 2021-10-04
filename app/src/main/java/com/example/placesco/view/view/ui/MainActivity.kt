@@ -23,14 +23,14 @@ class MainActivity : AppCompatActivity(), ClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        recycler = findViewById(R.id.recyclerview_places)
+        setContentView(R.layout.activity_main_details)
+    /*    recycler = findViewById(R.id.recyclerview_places)
         recycler.layoutManager = LinearLayoutManager(this)
         setupRecyclerView()
-        generateSites()
+        generateSites() */
     }
 
-    private fun setupRecyclerView() {
+   private fun setupRecyclerView() {
         mSites = arrayListOf()
         recycler.addItemDecoration(
             DividerItemDecoration(
