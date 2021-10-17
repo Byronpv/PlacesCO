@@ -1,53 +1,65 @@
 package com.example.placesco.view.view.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.placesco.R
 import com.example.placesco.model.Sites
-import com.example.poi.ClickListener
+import com.example.placesco.view.view.ui.ClickListener
+import com.example.placesco.view.view.ui.DetailsFragment
+import com.example.placesco.view.view.ui.HomeFragment
+import com.example.placesco.view.view.ui.MainActivity
+import com.example.placesco.viewmodel.SiteViewModel
 import com.squareup.picasso.Picasso
 
-class AdapterPlaces(private val mSites: ArrayList<Sites>, private val clickListener: ClickListener) : RecyclerView.Adapter<AdapterPlaces.ViewHolder>() {
+class AdapterPlaces(
+    private val context : Context,
+    private var sites : List<Sites>,
+    val clickListener : ClickListener
+) : RecyclerView.Adapter<AdapterPlaces.ViewHolder>() {
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_sites_description, parent, false)
         return ViewHolder(view);
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val (urlPhoto, name, description, rating) = mSites[position]
-        holder.nameLabel.text = name
-        holder.descriptionLabel.text = description
-        holder.ratingLabel.text = rating
-        Picasso.get().load(urlPhoto).into(holder.imageLabel)
-        val listener = holder.descriptionLabel
-        val listener2 = holder.imageLabel
-        val listener3 = holder.nameLabel
-        val listener4 = holder.ratingLabel
+        val item = sites[position]
+        holder.nameLabel.text = sites[position].name
+        holder.descriptionLabel.text = sites[position].description
+        holder.ratingLabel.text = sites[position].rating
+        Picasso.get().load(sites[position].urlPhoto).into(holder.imageLabel)
+
+        val listener = holder.imageLabel
+        val listener2 = holder.descriptionLabel
+        val listener3 = holder.ratingLabel
+        val listener4 = holder.nameLabel
         listener.setOnClickListener {
-            clickListener.onItemClicked(position)
+            clickListener.onItemClicked(position, item)
         }
         listener2.setOnClickListener {
-            clickListener.onItemClicked(position)
+            clickListener.onItemClicked(position, item)
         }
         listener3.setOnClickListener {
-            clickListener.onItemClicked(position)
+            clickListener.onItemClicked(position, item)
         }
         listener4.setOnClickListener {
-            clickListener.onItemClicked(position)
+            clickListener.onItemClicked(position, item)
         }
     }
 
     override fun getItemCount(): Int {
-        return mSites.size
+        return sites.size
     }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var imageLabel: ImageView = itemView.findViewById(R.id.image_profile)
         var nameLabel: TextView = itemView.findViewById(R.id.place_name)
         var descriptionLabel: TextView = itemView.findViewById(R.id.place_description)
