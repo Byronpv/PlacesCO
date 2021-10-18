@@ -6,16 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.placesco.R
 import com.example.placesco.model.Sites
 import com.example.placesco.view.view.ui.ClickListener
-import com.example.placesco.view.view.ui.DetailsFragment
-import com.example.placesco.view.view.ui.HomeFragment
-import com.example.placesco.view.view.ui.MainActivity
-import com.example.placesco.viewmodel.SiteViewModel
 import com.squareup.picasso.Picasso
 
 class AdapterPlaces(

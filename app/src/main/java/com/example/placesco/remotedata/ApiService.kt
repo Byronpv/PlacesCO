@@ -1,6 +1,5 @@
 package com.example.placesco.remotedata
 
-import android.telecom.Call
 import com.example.placesco.model.Sites
 import retrofit2.http.GET
 

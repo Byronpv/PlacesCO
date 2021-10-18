@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.placesco.R
 import com.example.placesco.model.Sites
-import com.example.placesco.remotedata.ApiService
 import com.example.placesco.view.view.adapter.AdapterPlaces
 import com.example.placesco.viewmodel.SiteViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -27,7 +26,6 @@ class HomeFragment : Fragment(), ClickListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         sitesList = view.findViewById(R.id.recyclerview_places)
 
@@ -40,9 +38,7 @@ class HomeFragment : Fragment(), ClickListener {
             adapterPlaces.notifyDataSetChanged()
             sitesList.adapter = adapterPlaces
         })
-
         return view
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -54,7 +50,6 @@ class HomeFragment : Fragment(), ClickListener {
         }
     }
 
-    // RecyclerView item is clicked
     override fun onItemClicked(position: Int, sites: Sites) {
         findNavController().navigate(R.id.action_homeFragment_to_detailsFragment)
         model = ViewModelProvider(requireActivity()).get(SiteViewModel::class.java)

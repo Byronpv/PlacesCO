@@ -28,7 +28,6 @@ class SiteViewModel : ViewModel() {
             override fun onFailure(call: Call<List<Sites>>, t: Throwable) {
                 TODO("Not yet implemented")
             }
-
         })
     }
 

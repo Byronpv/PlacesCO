@@ -15,7 +15,6 @@ import com.example.placesco.viewmodel.SiteViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.squareup.picasso.Picasso
 
-
 class DetailsFragment : Fragment() {
     private lateinit var model: SiteViewModel
     private lateinit var title: TextView
@@ -30,7 +29,6 @@ class DetailsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_details, container, false)
     }
 
@@ -52,7 +50,6 @@ class DetailsFragment : Fragment() {
             val locationIntent = Intent(Intent.ACTION_VIEW, uri)
             locationIntent.setPackage("com.google.android.apps.maps")
             startActivity(locationIntent)
-
         }
     }
 

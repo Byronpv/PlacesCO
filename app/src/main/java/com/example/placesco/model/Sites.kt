@@ -15,5 +15,4 @@ data class Sites(
     val location: String,
     @SerializedName("temperature")
     val temperature: String,
-)  {
-}
+)

@@ -16,8 +16,8 @@
         <action
             android:id="@+id/action_homeFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
-
     </fragment>
+
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.placesco.view.view.ui.SettingsFragment"
@@ -27,4 +27,5 @@
         android:name="com.example.placesco.view.view.ui.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
+
 </navigation>
