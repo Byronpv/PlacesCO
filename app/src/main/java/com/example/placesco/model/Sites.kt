@@ -1,8 +1,19 @@
 package com.example.placesco.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Sites(
-    val urlPhoto: String,
+    @SerializedName("name")
     val name: String,
+    @SerializedName("description")
     val description: String,
-    val rating: String
-)
+    @SerializedName("rating")
+    val rating: String,
+    @SerializedName("urlPhoto")
+    val urlPhoto: String,
+    @SerializedName("location")
+    val location: String,
+    @SerializedName("temperature")
+    val temperature: String,
+)  {
+}
