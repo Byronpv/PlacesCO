@@ -22,7 +22,6 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.placesco.view.view.ui.SettingsFragment"
         android:label="Settings" />
-
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.example.placesco.view.view.ui.DetailsFragment"

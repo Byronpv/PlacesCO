@@ -6,14 +6,12 @@
 
         <CheckBoxPreference
             android:title="@string/field1"
-            android:defaultValue="true"
-            />
+            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:title="@string/field2"
-            android:defaultValue="true"
+            android:defaultValue="true" />
 
-            />
     </PreferenceCategory>
 
 </PreferenceScreen>
